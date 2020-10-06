@@ -1,0 +1,40 @@
+.top{
+    text-align: center;
+}
+.top p{
+    color: #ffffff;
+    font-size: 35px;
+    font-style: inherit;
+    margin-right: 500px;
+    letter-spacing: 5px;
+}
+.top img{
+    margin-top: -20px;
+}
+.wrapper{
+    max-height: 500px;
+    display: flex;
+    background: black;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .wrapper::-webkit-scrollbar{
+    width: 0;
+  }
+  .wrapper .iteam{
+    color: white;
+    margin: 10px;
+    height: 300px;
+    min-width: 500px;
+    line-height: 120px;
+    margin: 2px;
+    text-align: center;
+    background-color: grey;
+  }
+  .box1-image{
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+  }
