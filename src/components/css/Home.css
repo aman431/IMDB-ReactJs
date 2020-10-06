@@ -38,3 +38,16 @@
       height: 100%;
       text-align: center;
   }
+  .Carousel{
+    width: 700px;
+    height: 600px;
+    margin-left: 0px;
+  }
+.Carousel img{
+  height: 400px;
+}
+.arrow{
+  color: black;
+  background-color: black;
+}
+
