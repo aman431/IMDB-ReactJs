@@ -2,12 +2,12 @@ import React from 'react';
 export const ImageData = [
     {
         cName: 'nav-text',
-        title: <img src="https://i.ytimg.com/vi/Qapq4FB6mBg/maxresdefault.jpg" alt=""/>,
+        title: <iframe width="1000" height="550" src="https://www.youtube.com/embed/y7Ulq5dvTpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
         poster: 'Aman'
     },
     {
         cName: 'nav-text',
-        title: <img src="https://m.media-amazon.com/images/M/MV5BMjUyMTFiMTMtMmNkMy00NzU2LWI4NjQtYTU2OGM2Zjc3ZTNmXkEyXkFqcGdeQWRvb2xpbmhk._V1_UX477_CR0,0,477,268_AL_.jpg" alt=""/>,
+        title: <iframe width="1000" height="550" src="https://www.youtube.com/embed/K7J9fvGyAm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
         poster:'Aman'
     },
     {
