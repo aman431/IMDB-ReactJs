@@ -2,6 +2,7 @@ import React from 'react'
 import './css/Home.css';
 import Carousel from 'react-elastic-carousel';
 import {ImageData} from './ImageData';
+import Featured from './featured';
 
 class Home extends React.Component{
 
@@ -25,6 +26,9 @@ class Home extends React.Component{
                             )
                         })}
                     </Carousel>
+                </div>
+                <div className="featured">
+                    <Featured />
                 </div>
             </div>
         )
