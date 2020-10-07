@@ -9,7 +9,7 @@
     letter-spacing: 5px;
 }
 .top img{
-    margin-top: -20px;
+    margin-top: -15px;
 }
 .wrapper{
     max-height: 500px;
@@ -38,3 +38,28 @@
       height: 100%;
       text-align: center;
   }
+  .Carousel{
+    width: 700px;
+    height: 600px;
+    margin-top: 30px;
+  }
+.Carousel img{
+  height: 400px;
+}
+
+.Carousel button {
+  position: relative;
+  background-color: black;
+  border-radius: 0px;
+  border: 1px solid white;
+}
+
+.Carousel button:hover {
+  background-color: black;
+}
+
+.Carousel .chowzb:hover:enabled, .chowzb:focus:enabled {
+    color: #fff;
+    background-color: black;
+    box-shadow: 0 0 2px 0 #333;
+}
