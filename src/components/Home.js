@@ -5,6 +5,7 @@ import {ImageData} from './ImageData';
 import Featured from './featured';
 import * as IoIcons from 'react-icons/io';
 import QueueSharpIcon from '@material-ui/icons/QueueSharp';
+import Fan from './fan';
 
 class Home extends React.Component{
 
@@ -45,9 +46,13 @@ class Home extends React.Component{
                             <p>Sign in to access your Watchlist<br />
                                 <span>Save shows and movies to keep track of what you want to watch</span>
                             </p>
+                            <div className="sign">
+                                <a href="#">Sign in to IMDB</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <fan />
             </div>
         )
     }

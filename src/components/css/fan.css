@@ -1,0 +1,19 @@
+.center .h_b {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  margin-right: 10px;
+  width: 5px;
+  background-color: darkgoldenrod;
+}
+.center{
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 0%;
+}
+.icon{
+  font-size: 35px;
+}
+.center p{
+  font-size: 20px;
+}

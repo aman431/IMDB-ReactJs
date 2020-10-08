@@ -115,11 +115,26 @@
 }
 .center{
   text-align: center;
-  margin-top: 8%;
-  margin-left: 10%;
+  margin-top: 10%;
+  margin-left: 0%;
 }
 .icon{
-  /* margin: 10%;
-  margin-left: 25%; */
   font-size: 35px;
+}
+.center p{
+  font-size: 20px;
+}
+.sign{
+  /*position: relative;*/
+  margin-top: 20px;
+}
+.sign a{
+  position: relative;
+  font-size: 20px;
+  /*top: 20px;*/
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+  background-color: darkgoldenrod;
 }
