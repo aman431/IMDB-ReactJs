@@ -64,3 +64,62 @@
   color: white;
   margin-left:100px;
 }
+.watch{
+  display: flex;
+}
+.watch h2{
+  color: darkgoldenrod;
+  margin-left: 50px;
+  font-size: 35px;
+}
+.watch a{
+  text-decoration: none;
+  margin-left: 200px;
+  color: black;
+  background-color: darkgoldenrod;
+  font-size: 20px;
+  width: 300px;
+  padding: 15px;
+}
+.watch span{
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+.F_Y_W{
+  margin: 20px;
+  height: 300px;
+  display: flex;
+  background-color:  rgb(22, 21, 21);
+}
+.F_Y_W a{
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-weight: 100px;
+}
+.F_Y_W .h_b {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  margin-right: 10px;
+  width: 5px;
+  background-color: darkgoldenrod;
+}
+.F_Y_W a span{
+  margin-top: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+.center{
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 10%;
+}
+.icon{
+  /* margin: 10%;
+  margin-left: 25%; */
+  font-size: 35px;
+}

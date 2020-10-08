@@ -3,6 +3,8 @@ import './css/Home.css';
 import Carousel from 'react-elastic-carousel';
 import {ImageData} from './ImageData';
 import Featured from './featured';
+import * as IoIcons from 'react-icons/io';
+import QueueSharpIcon from '@material-ui/icons/QueueSharp';
 
 class Home extends React.Component{
 
@@ -29,6 +31,22 @@ class Home extends React.Component{
                 </div>
                 <div className="featured">
                     <Featured />
+                </div>
+                <div className="watch">
+                    <h2 className="what_to_watch">What to watch</h2>
+                    <a href="#">Browse our What to Watch Page <span><IoIcons.IoIosArrowForward /></span></a>
+                </div>
+                <div className="watchlist">
+                    <div className="F_Y_W">
+                        <div className="h_b"></div>
+                        <a href="#">From Your WatchList <span><IoIcons.IoIosArrowForward /></span></a>
+                        <div className="center">
+                            <div className="icon"><QueueSharpIcon/></div>
+                            <p>Sign in to access your Watchlist<br />
+                                <span>Save shows and movies to keep track of what you want to watch</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
