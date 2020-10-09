@@ -116,7 +116,7 @@
 .center{
   text-align: center;
   margin-top: 10%;
-  margin-left: 0%;
+  /*margin-left: -5%;*/
 }
 .icon{
   font-size: 35px;
@@ -125,13 +125,11 @@
   font-size: 20px;
 }
 .sign{
-  /*position: relative;*/
   margin-top: 20px;
 }
 .sign a{
   position: relative;
   font-size: 20px;
-  /*top: 20px;*/
   border-radius: 2px;
   text-decoration: none;
   color: black;
