@@ -30,7 +30,7 @@ function Header() {
 			</div>
 
 			<div className="watchlist">
-				<Link to="signin" className="header_link">
+				<Link to="/watchlist" className="header_link">
 					<div className='watchlist'>
 						<p><span><QueueSharpIcon /></span> Watchlist </p>
 					</div>
