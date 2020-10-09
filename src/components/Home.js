@@ -5,6 +5,7 @@ import {ImageData} from './ImageData';
 import Featured from './featured';
 import * as IoIcons from 'react-icons/io';
 import QueueSharpIcon from '@material-ui/icons/QueueSharp';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Fan from './fan';
 
 class Home extends React.Component{
@@ -12,23 +13,29 @@ class Home extends React.Component{
     render(){
         //const {items} = this.state;
         return (
-            <div>
+            <div className="home">
                 <div className="top">
                     <p>Amazon Original</p>
                     <img src="https://images-na.ssl-images-amazon.com/images/G/02/shazam/MOLV-S1-01137-PMHouse-970x250-POST-Final-en-US-HO-PVD2765-KvObS-a9a98a6b-3fbe-4e11-952b-facb7a425310.jpg" alt=""/>
                 </div>
-                <div className="Carousel">
-                    <Carousel>
-                        {ImageData.map((items, index) => {
-                            return(
-                                <div key={index} className={items.cName}>
-                                    <div style={{background:"linear-gradient(to bottom, transparent 0%, transparent 65%, rgba(0,0,0,0.35) 83.5%, rgba(0,0,0,0.75) 100%)"}}className="image">
-                                        {items.title}
+                <div className="header_main">
+                    <div className="Carousel">
+                        <Carousel>
+                            {ImageData.map((items, index) => {
+                                return(
+                                    <div key={index} className={items.cName}>
+                                        <div style={{background:"linear-gradient(to bottom, transparent 0%, transparent 65%, rgba(0,0,0,0.35) 83.5%, rgba(0,0,0,0.75) 100%)"}}className="image">
+                                            {items.title}
+                                        </div>
                                     </div>
-                                </div>
-                            )
-                        })}
-                    </Carousel>
+                                )
+                            })}
+                        </Carousel>
+                    </div>
+                    <div className="browser">
+                        <h1>Browse Trailer <span><ArrowForwardIosIcon /></span></h1>
+                        <iframe className="t_video" width="300" height="400" src="https://www.youtube.com/embed/uYUa4SN29RM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div className="featured">
                     <Featured />

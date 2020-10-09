@@ -1,0 +1,59 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form > h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login-form > form > h5{
+    margin-bottom: 5px;
+}
+
+.login-form > form > input{
+    height: 30px;
+    margin-bottom: 10px;
+    width: 98%;
+}
+
+.login-form > p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.signIn{
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+}
+.signUp{
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: darkgray;
+    cursor: pointer;
+}
+
+.login-form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding:20px;;
+    border: 1px solid lightgray;
+}
+.amazon-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    object-fit: contain;
+}

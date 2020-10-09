@@ -1,3 +1,6 @@
+.home{
+  background: black;
+}
 .top{
     text-align: center;
 }
@@ -11,18 +14,31 @@
 .top img{
     margin-top: -15px;
 }
+.header_main{
+  display: flex;
+ 
+}
+.header_main .browser {
+  margin-top: 24px;
+  margin-left: 20px;
+}
+.header_main .browser h1{
+  color: white;
+  font-size: 26px;
+}
+.header_main .browser span{
+  position: relative;
+  top: 5px;
+}
+.header_main .t_video{
+  margin-top: 20px;
+}
   .Carousel {
     width: 95%;
     margin-top: 3%;
-    margin-left: -250px;
+    margin-left: -300px;
   }
-/*.Carousel img{
-  background: linear-gradient(to bottom, transparent 0%, transparent 65%, rgba(0,0,0,0.35) 83.5%, rgba(0,0,0,0.75) 100%);
-  height: 550px;
-  width: 1000px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,1));
-  z-index: -1;
-}*/
+
 .Carousel .chowzb:hover:enabled, .chowzb:focus:enabled {
     color: darkgoldenrod;;
     background-color: black;
@@ -94,6 +110,7 @@
 }
 .F_Y_W a{
   margin-top: 20px;
+  letter-spacing: 1px;
   text-decoration: none;
   font-size: 25px;
   color: white;
@@ -115,24 +132,33 @@
 }
 .center{
   text-align: center;
-  margin-top: 10%;
-  /*margin-left: -5%;*/
+  margin-top: 8%;
+  margin-left: 10%;
 }
 .icon{
   font-size: 35px;
 }
 .center p{
   font-size: 20px;
+  font-weight: bold;
 }
-.sign{
+/* .center span{
+} */
+
+.center .sign{
+  border-radius: 3px;
+  margin-left: 200px;
   margin-top: 20px;
-}
-.sign a{
-  position: relative;
-  font-size: 20px;
-  border-radius: 2px;
-  text-decoration: none;
-  color: black;
-  padding: 4px;
+  text-align: center;
   background-color: darkgoldenrod;
+  width: 200px;
+}
+
+.center .sign a{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
 }

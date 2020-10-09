@@ -11,7 +11,8 @@ export default class featured extends Component {
             infinite: true,
             speed: 500,
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            autoplay: true
           };
         return (
             <div className="main">
