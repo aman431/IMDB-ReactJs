@@ -5,7 +5,7 @@ import Home from './components/Home';
 import SignIn from './components/signin';
 import Register from './components/Register';
 import Watchlist from './components/watchlist';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 
 class App extends React.Component {
     constructor(props){
@@ -20,15 +20,14 @@ class App extends React.Component {
     handleChange = (e) => {
       this.setState({
         [e.target.name]: e.target.value
-      });
+      },console.log(this.state.username));
     };
 
-    handleSignIn = (e) => {
-      if(this.username && this.password){
+    handleSignIn = () => {
+      if(this.state.username && this.state.password){
         this.setState({
           isLoggedIn: true
-        });
-        console.log(this.state.isLoggedIn);
+        },console.log("Working",this.state.isLoggedIn));
       }
 
       else{
@@ -38,6 +37,7 @@ class App extends React.Component {
     }
 
   render(){
+    const {username,password,isLoggedIn} = this.state;
     return (
         <BrowserRouter>
           <Header />
@@ -55,9 +55,9 @@ class App extends React.Component {
                 <SignIn 
                   handleChange = {this.handleChange}
                   handleSignIn = {this.handleSignIn}
-                  username = {this.username}
-                  password = {this.password}
-                  isLoggedIn = {this.isLoggedIn}
+                  username = {username}
+                  password = {password}
+                  isLoggedIn = {isLoggedIn}
                   {...props}
                 />
                 );
@@ -67,9 +67,17 @@ class App extends React.Component {
               <Route exact path='/Register'>
   						  <Register />
   					  </Route>
-              <Route exact path='/watchlist'>
-                <Watchlist />
-              </Route>
+              <Route 
+              exact 
+              path='/watchlist'
+              render = {(props)=>{
+                if(isLoggedIn){
+                  return <Watchlist {...props}/>
+                } else {
+                  return <Redirect to='/signin' />
+                }
+              }}
+              />
             </Switch>
           </div>
         </BrowserRouter>

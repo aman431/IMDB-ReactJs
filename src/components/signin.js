@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import './css/login.css';
-export default function ({username,password,isLoggedIn,handleChange,handleSignin}){
+export default function signin({username,password,isLoggedIn,handleChange,handleSignIn}){
+    if(isLoggedIn){
+        return <Redirect to='/' />
+    }
     return (
         <div>
         <div className="login">
@@ -10,7 +13,6 @@ export default function ({username,password,isLoggedIn,handleChange,handleSignin
             </Link>
             <div className="login-form">
                 <h1>Sign in</h1>
-                <form>
                     <h5>Username</h5>
                     <input type="text" 
                         name="username"
@@ -25,8 +27,7 @@ export default function ({username,password,isLoggedIn,handleChange,handleSignin
                         value={password}
                         onChange={handleChange}
                     />
-                    <button className="signIn" onClick={handleSignin}>Sign In</button>
-                </form>
+                    <button className="signIn" onClick={handleSignIn}>Sign In</button>
                 <p>
                     By continuing, you agree to IMDB <a target="_blank" href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=200545940"> Conditions of Use </a> and <a target="_blank" href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=200534380"> Privacy Notice.</a>
                 </p>
